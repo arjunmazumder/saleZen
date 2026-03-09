@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-8n&u7tifananiy9pt9s3y@41+q7ww0k88=tz(oua5414dyjg(c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['arjunmazumder.pythonanywhere.com','http://127.0.0.1:8000/']
 AUTH_USER_MODEL = 'users.User'
 CORS_ALLOW_ALL_ORIGINS = True
 
