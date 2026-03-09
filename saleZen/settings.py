@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8n&u7tifananiy9pt9s3y@41+q7ww0k88=tz(oua5414dyjg(c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 AUTH_USER_MODEL = 'users.User'
@@ -83,30 +83,32 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'saleZen.wsgi.application'
+WSGI_APPLICATION = 'saleZen.wsgi.app'
 
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': config('database'),
-#         'USER': config('user'),
-#         'PASSWORD': config('password'),
-#         'HOST': config('host'),
-#         'PORT': config('port', cast=int),
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'E9FkAuMTNxdkyoBJ',
+        'HOST': 'db.bmzamspbeujgvqthbmub.supabase.co',
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation
