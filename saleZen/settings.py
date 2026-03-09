@@ -14,8 +14,8 @@ from pathlib import Path
 from decouple import config
 from datetime import timedelta
 import os
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -91,10 +91,25 @@ WSGI_APPLICATION = 'saleZen.wsgi.app'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
+
+#for mysqul
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'softzen1_saledb',
+        'USER': 'softzen1_salezenuser',
+        'PASSWORD': 'Arjun37912*9852#',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
