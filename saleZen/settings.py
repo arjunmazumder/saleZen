@@ -108,7 +108,7 @@ DATABASES = {
         'NAME': 'softzen1_saledb',
         'USER': 'softzen1_salezenuser',
         'PASSWORD': 'Arjun37912*9852#',
-        'HOST': 'localhost',
+        'HOST': '144.79.133.221',
         'PORT': '3306',
     }
 }
