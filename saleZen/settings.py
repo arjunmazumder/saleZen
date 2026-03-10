@@ -9,9 +9,10 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
+import pymysql
+pymysql.install_as_MySQLdb()
 
 from pathlib import Path
-from decouple import config
 from datetime import timedelta
 import os
 # from dotenv import load_dotenv
